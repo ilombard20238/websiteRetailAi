@@ -1,100 +1,57 @@
-/* Retro Cream-Beige-Orange Theme */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RetailAI – Retro Vision</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+<header class="pixel-border">
+    <h1>RetailAI</h1>
+    <p>AI-Powered Product Identification • Retro Vibes</p>
 
-body {
-    font-family: 'VT323', monospace;
-    background-color: #f5f0e6; /* Cream/beige background */
-    color: #6b4f1d; /* Dark warm brown text */
-    margin: 0;
-    padding: 0;
-    letter-spacing: 1px;
-}
+    <nav>
+        <a href="#about">About</a>
+        <a href="#how">How It Works</a>
+        <a href="#demo">Demo</a>
+    </nav>
+</header>
 
-header {
-    background: linear-gradient(90deg, #f28c28, #d96f1a); /* Warm orange gradient */
-    padding: 40px;
-    text-align: center;
-    color: #fff3e0; /* Light cream text */
-    border-bottom: 4px solid #d96f1a;
-    box-shadow: 0 4px 10px rgba(217, 111, 26, 0.5);
-}
+<div class="section pixel-border" id="about">
+    <h2>What is RetailAI?</h2>
+    <p>
+        RetailAI is a computer vision system trained using AlexNet to identify 
+        store merchandise—bags, hats, shoes, and more. When an item is missing 
+        a price tag, RetailAI instantly recognizes the product from a photo 
+        and retrieves the correct price.
+    </p>
+</div>
 
-h1 {
-    font-size: 60px;
-    margin: 0;
-}
+<div class="section pixel-border" id="how">
+    <h2>How It Works</h2>
+    <ol>
+        <li>Take a photo of the item.</li>
+        <li>RetailAI processes the image using deep learning.</li>
+        <li>The system displays the product name and price instantly.</li>
+    </ol>
+</div>
 
-nav {
-    text-align: center;
-    margin-top: 15px;
-}
+<div class="section pixel-border" id="demo">
+    <h2>Demo (Coming Soon)</h2>
+    <p>
+        A live version of the RetailAI model will be available soon.  
+        You will be able to upload an image and watch the AI identify it!
+    </p>
 
-nav a {
-    color: #d96f1a; /* Orange links */
-    margin: 0 15px;
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: bold;
-    text-shadow: 1px 1px 0 #f5f0e6;
-}
+    <button onclick="comingSoon()">Try Demo</button>
+</div>
 
-nav a:hover {
-    color: #f28c28;
-    text-shadow: 0 0 8px #f28c28;
-}
+<footer>
+    <p>RetailAI © 2025 – Designed in Retro Style</p>
+</footer>
 
-.section {
-    background: #fff3e0; /* Very light cream */
-    padding: 40px;
-    margin: 40px auto;
-    width: 80%;
-    border: 3px solid #d96f1a;
-    border-radius: 10px;
-    box-shadow: 0 0 20px #f28c28;
-}
-
-h2 {
-    font-size: 40px;
-    color: #d96f1a;
-    text-shadow: 0 0 6px #f28c28;
-}
-
-p, li, ol {
-    font-size: 24px;
-    line-height: 1.6;
-    color: #6b4f1d;
-}
-
-ul, ol {
-    padding-left: 20px;
-}
-
-button {
-    background-color: #d96f1a;
-    color: #fff3e0;
-    padding: 12px 25px;
-    font-size: 22px;
-    cursor: pointer;
-    border: none;
-    margin-top: 20px;
-    font-family: 'VT323', monospace;
-    border: 3px solid #f28c28;
-    border-radius: 6px;
-    box-shadow: 0 0 15px #d96f1a;
-    transition: all 0.3s ease;
-}
-
-button:hover {
-    background-color: #f28c28;
-    color: #6b4f1d;
-    box-shadow: 0 0 20px #f28c28;
-}
-
-footer {
-    text-align: center;
-    padding: 25px;
-    color: #6b4f1d;
-    border-top: 3px solid #d96f1a;
-    margin-top: 40px;
-}
+<script src="script.js"></script>
+</body>
+</html>
